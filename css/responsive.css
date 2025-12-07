@@ -1,113 +1,19 @@
-/* -----------------------------
-      TELAS ATÉ 991px
-   ----------------------------- */
+/* Ajustar colunas que têm width fixa */
 @media (max-width: 991px) {
+    .padd-15 {
+        width: 100% !important;
+    }
 
-    /* Aside vira topo */
-    .aside {
+    /* Remove margens laterais para não quebrar */
+    .section {
+        padding: 20px 15px;
+    }
+
+    /* Ajusta blocos do About */
+    .about .about-content .skills,
+    .about .about-content .education,
+    .about .about-content .experience,
+    .about .about-content .personal-info {
         width: 100%;
-        height: auto;
-        position: relative;
-        padding: 10px 0;
-    }
-
-    .aside .logo {
-        text-align: center;
-    }
-
-    .aside .info-sidebar figure {
-        display: none; /* esconde imagem grande no mobile */
-    }
-
-    /* Menu mobile */
-    .nav {
-        display: none; /* escondido até abrir */
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    .nav.active {
-        display: block;
-    }
-
-    /* Botão hamburguer */
-    .nav-toggler {
-        display: block;
-        cursor: pointer;
-        position: absolute;
-        right: 20px;
-        top: 20px;
-    }
-
-    .nav-toggler span {
-        background: #fff;
-    }
-
-    /* Conteúdo ocupa tela toda */
-    .main-content {
-        margin-left: 0;
-        padding: 20px;
-    }
-
-    /* Seções empilhadas */
-    .row {
-        flex-direction: column;
-    }
-
-    .home-info,
-    .home-img {
-        width: 100%;
-        text-align: center;
-    }
-
-    .home-img img {
-        width: 200px;
-        border-radius: 50%;
-    }
-
-    /* Portfolio */
-    .portfolio-item {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-}
-
-/* -----------------------------
-      TELAS ATÉ 768px
-   ----------------------------- */
-@media (max-width: 768px) {
-
-    h2, h3 {
-        text-align: center;
-    }
-
-    .about .personal-info .info-item {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .skills img {
-        width: 40px;
-    }
-}
-
-/* -----------------------------
-      TELAS ATÉ 480px
-   ----------------------------- */
-@media (max-width: 480px) {
-
-    .btn {
-        display: block;
-        margin: 10px auto;
-        width: 80%;
-        text-align: center;
-    }
-
-    .home-info p {
-        font-size: 14px;
-    }
-
-    .portfolio-item-inner {
-        padding: 10px;
     }
 }
