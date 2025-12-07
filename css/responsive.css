@@ -1,62 +1,113 @@
-@media (max-width: 1119px) {
-    
-    .section .container {
-        padding-top: 70px;
-    }
-    .aside {
-        left: -270px;
-    }
-    .aside .nav-toggler {
-        display: flex;
-        left: 30px;
-    }
-    .aside.open {
-        left: 0;
-    }
-    .aside .nav-toggler.open {
-        left: 300px;
-    }
-    .section {
-        left: 0;
-    }
-    .section.open {
-
-    }
-    .about .about-content .personal-info .info-item p span {
-        display: block;
-        margin-left: 0;
-    }
-}
-
+/* -----------------------------
+      TELAS ATÉ 991px
+   ----------------------------- */
 @media (max-width: 991px) {
 
-    .service .service-item,
-    .portfolio .portfolio-item,
-    .contact .contact-item {
-        flex: 0 0 50%;
-        max-width: 50%;
+    /* Aside vira topo */
+    .aside {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 10px 0;
     }
 
-    .home .home-info {
-        flex: 0 0 100%;
-        max-width: 100%;
+    .aside .logo {
+        text-align: center;
+    }
+
+    .aside .info-sidebar figure {
+        display: none; /* esconde imagem grande no mobile */
+    }
+
+    /* Menu mobile */
+    .nav {
+        display: none; /* escondido até abrir */
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav.active {
+        display: block;
+    }
+
+    /* Botão hamburguer */
+    .nav-toggler {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .nav-toggler span {
+        background: #fff;
+    }
+
+    /* Conteúdo ocupa tela toda */
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    /* Seções empilhadas */
+    .row {
+        flex-direction: column;
+    }
+
+    .home-info,
+    .home-img {
+        width: 100%;
+        text-align: center;
     }
 
     .home-img img {
-        display: none;
+        width: 200px;
+        border-radius: 50%;
+    }
+
+    /* Portfolio */
+    .portfolio-item {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
 
-@media (max-width: 767px) {
-    .service .service-item,
-    .portfolio .portfolio-item,
-    .contact .contact-info-item,
-    .contact .contact-form .col-6,
-    .about .about-content .skills,
-    .about .about-content .education,
-    .about .about-content .experience,
-    .about .about-content .personal-info {
-        flex: 0 0 100%;
-        max-width: 100%;
+/* -----------------------------
+      TELAS ATÉ 768px
+   ----------------------------- */
+@media (max-width: 768px) {
+
+    h2, h3 {
+        text-align: center;
+    }
+
+    .about .personal-info .info-item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .skills img {
+        width: 40px;
+    }
+}
+
+/* -----------------------------
+      TELAS ATÉ 480px
+   ----------------------------- */
+@media (max-width: 480px) {
+
+    .btn {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+        text-align: center;
+    }
+
+    .home-info p {
+        font-size: 14px;
+    }
+
+    .portfolio-item-inner {
+        padding: 10px;
     }
 }
